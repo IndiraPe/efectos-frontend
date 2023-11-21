@@ -1,0 +1,28 @@
+html, body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.hero-image{
+    height: 75vh; /* Para que se vea que hay más contenido abajo */
+    background: url('./fondo.jpg'), white;
+    background-size: cover;
+    background-position: center;
+    padding: 2em;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 5%;
+}
+
+.hero-image h1{
+    font-size: 72px;
+    margin: 0;
+    text-shadow: 0px 0px 4px #000;
+}
+
+.hero-image p{
+    font-size: 24px;
+    text-shadow: 0px 0px 2px #000;
+}

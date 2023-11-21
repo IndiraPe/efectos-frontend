@@ -1,0 +1,75 @@
+html{
+    background-color: rgb(205, 190, 219);
+}
+div{
+    display: inline-block;
+    margin: 5px;
+}
+
+.text3d{
+    font-size: 56px;
+    color: rgb(111, 0, 128);
+    text-shadow: 1px 1px 2px rgb(64, 0, 74),
+    2px 2px 2px rgb(111, 0, 128), 4px 4px 2px rgb(111, 0, 128);
+}
+
+.card{
+    background: white;
+    border-radius: 2px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0px 2px 5px gray, 0px 2px 10px gray;
+}
+
+.card2{
+    background: white;
+    border-radius: 2px;
+    width: 400px;
+    height: 300px;
+    position: relative;
+}
+
+.card2::before, .card2::after{
+    content: "";
+    width: 30%;
+    height: 10px;
+    top: 93%;
+    left: 69%;
+    transform: rotate(5deg);
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    box-shadow: 0px 15px 10px gray;
+}
+
+.card2::before{
+    left: 1%;
+    transform: rotate(-5deg);
+}
+
+.box3d{
+    background-color: purple;
+    width: 400px;
+    height: 300px;
+    box-shadow: 3px 3px 0px 3px rgb(70, 0, 70), 12px 12px 4px gray;
+}
+
+.box3d:active{
+    box-shadow: 3px 3px 0px 3px rgb(70, 0, 70), 2px 2px 4px gray;
+}
+
+.custom-list{
+    list-style-type: none;
+    position: relative;
+}
+
+.custom-list li::before{
+    content: '';
+    position: absolute;
+    width: .5em;
+    height: .5em;
+    border-radius: 50%;
+    background-color: purple;
+    left: -.01em;
+
+}
